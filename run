@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bw get item fireboard | jq '.login | {username, password}' | pipenv run python main.py
